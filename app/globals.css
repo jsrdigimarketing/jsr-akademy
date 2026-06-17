@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sora: "Sora", system-ui, sans-serif;
+    --font-inter: "Inter", system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-darkblue font-sans text-brand-white antialiased;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  /* Keyboard focus ring — neon green for the premium tech feel */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-green ring-offset-2 ring-offset-brand-darkblue;
+  }
+
+  ::selection {
+    background-color: #96ff00;
+    color: #1f1a80;
+  }
+}
+
+@layer utilities {
+  /* Reusable neon-green accent underline motif */
+  .accent-underline {
+    position: relative;
+  }
+  .accent-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    height: 3px;
+    width: 3.5rem;
+    border-radius: 9999px;
+    background-color: #96ff00;
+    box-shadow: 0 0 14px rgba(150, 255, 0, 0.6);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Glassmorphism surface used on cards over the gradient */
+  .glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
