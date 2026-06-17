@@ -88,7 +88,7 @@ export default function AboutPage() {
           <Reveal delay={0.1} className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 shadow-card">
               <Image
-                src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=1000&q=80"
+                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwY29sbGVnZSUyMHN0dWRlbnRzfGVufDB8fDB8fHww"
                 alt="Team collaborating in a bright workspace"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
