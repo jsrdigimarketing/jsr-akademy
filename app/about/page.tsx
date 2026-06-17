@@ -56,7 +56,7 @@ export default function AboutPage() {
             Education that <span className="text-brand-green">moves the world</span>
           </>
         }
-        subtitle="We started JSR Akademy with one belief: world-class, career-changing skills should be within everyone's reach."
+        subtitle="JSR Akademy started with one belief: world-class, career-changing skills should be within everyone's reach."
       />
 
       {/* Mission + image */}
